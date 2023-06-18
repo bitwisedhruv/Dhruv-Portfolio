@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/logo final.png" />
+    <title>Dhruv Personal Portfolio</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/6b277bfd06.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav>
+      <div class="logo">
+        <img src="assets/logo final.png" alt="" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+    <!-- Hero Section start -->
+    <section id="header">
+      <div class="container">
+        <div class="text" data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+          <p>Android Developer</p>
+          <h1>Hi, I'm <span>Dhruv</span><br/>from India</h1>
+          <button><a href="assets/Dhruv Resume.pdf" download target="_blank">Download CV</a></button>
+        </div>
+        <img data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out" src="assets/header.svg" alt="" />
+      </div>
+    </section>
+    <!-- Hero Section end -->
+    <!-- About Section start -->
+    <section id="about">
+      <div class="about_container">
+        <div class="about-col-photo" data-aos="flip-right"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+          <img src="assets/profilr-pic-1.jpg" alt="about" />
+        </div>
+
+        <div class="about-col-data" data-aos="flip-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+          <h1 class="sub-title">About Me</h1>
+          <p class="abt-para">
+            Hello there! My name is Dhruv, and I'm a motivated computer science
+            student with a love for creating mobile apps. I have the capacity to
+            quickly understand new ideas and apply them because I'm an excellent
+            listener. My area of specialisation is Flutter, and I'm always
+            looking for ways to learn more and improve. Through my work, I try
+            to provide novel solutions that enhance people's lives. I can't wait
+            to work with like-minded professionals in the field to develop
+            cutting-edge mobile applications. Please follow me for additional
+            details about my work and interests in Flutter and app development.
+          </p>
+
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('Skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+              <li>
+                <span>Web Development</span><br />Web Development in HTML & CSS
+                only currently
+              </li>
+              <li><span>App Development</span><br />Building Android apps</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li><span>2022 - Present</span><br />Vice President at CXI</li>
+              <li>
+                <span>2022 - 2023</span><br />Google Crowdsource Influencer
+              </li>
+              <li><span>2022 - 2023</span><br />Android Lead at GDSC MIET</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+    <!-- Services Section start -->
+    <section id="services">
+      <div class="services_container">
+        <h1 class="sub-title-srv"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        >My Services</h1>
+        <div class="services-list">
+          <div class="services"  data-aos="flip-up"
+          data-aos-duration="1000"
+          data-aos-delay="50"
+          data-aos-easing="ease-in-out">
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Developing mobile applications for Android and iOS platforms using
+              Flutter framework.
+            </p>
+          </div>
+          <div class="services" data-aos="flip-up"
+          data-aos-duration="1000"
+          data-aos-delay="150"
+          data-aos-easing="ease-in-out">
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Creating user interfaces and user experiences for mobile apps and
+              web interfaces that are visually appealing, easy to
+              use, and functional.
+            </p>
+          </div>
+          <div  class="services" data-aos="flip-up"
+          data-aos-duration="1000"
+          data-aos-delay="250"
+          data-aos-easing="ease-in-out">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Creating visually appealing, user-friendly, and responsive web
+              interfaces using HTML, CSS, and JavaScript.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section end -->
+    <!-- PROJECTS Section start -->
+    <section id="projects">
+      <div class="projects_conatiner">
+        <h1 class="sub-title-wrk"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        >My Work</h1>
+        <div class="work-list">
+          <div class="work"
+          data-aos="flip-right"
+          data-aos-duration="1000"
+          data-aos-delay="50"
+          data-aos-easing="ease-in-out"
+          >
+            <img src="assets/work-1.jpg" alt="" />
+            <div class="layer">
+              <h3>Mausam</h3>
+              <p>
+                This is a weather app that provides users with information about
+                the weather in their area, It appears to be a straight forward
+                and useful app that could be used to plan outdoor activities or
+                determine what to wear for the day.
+              </p>
+              <a href="https://github.com/bitwisedhruv/Mausam" class="btn5"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work"
+          data-aos="flip-right"
+          data-aos-duration="1000"
+          data-aos-delay="150"
+          data-aos-easing="ease-in-out"
+          >
+            <img src="assets/work-2.jpg" alt="" />
+            <div class="layer">
+              <h3>Full stack WhatsApp Clone</h3>
+              <p>
+                As the name suggests,this app aims to clone the popular
+                messaging app, WhatsApp. It is a full-stack application, meaning
+                it has both front-end and back-end, and appears to be a
+                comprehensive clone that users can interact with just like the
+                real WhatsApp.
+              </p>
+              <a
+                href="https://github.com/bitwisedhruv/whatsapp-clone"
+                class="btn5"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work"
+          data-aos="flip-right"
+          data-aos-duration="1000"
+          data-aos-delay="250"
+          data-aos-easing="ease-in-out"
+          >
+            <img src="assets/work-3.jpg" alt="" />
+            <div class="layer">
+              <h3>Quizzy</h3>
+              <p>
+                This quiz app is an interesting take on the popular game show,
+                Kaun Banega Crorepati. Users can unlock, play and earn quizzes
+                using KBC currency. It appears to be a fun and engaging way to
+                test knowledge and potentially win rewards.
+              </p>
+              <a href="https://github.com/bitwisedhruv/QuizBit" class="btn5"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="http://github.com/bitwisedhruv" class="btn4">See More</a>
+      </div>
+    </section>
+    <!-- PROJECTS Section end -->
+    <!-- Contact Section start -->
+    <section id="contact">
+        <div class="contact_container">
+          <h1
+          data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+          >Contact Me</h1>
+          <div class="box">
+              <div class="left_box"
+              data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="250"
+          data-aos-easing="ease-in-out">
+                  <a class="link" href="mailto:dhruv13723@gmail.com"><i class="fa-solid fa-envelope"></i>dhruv13723@gmail.com</a>
+                  <a class="link" href="tel:9319524703"><i class="fa-solid fa-phone"></i>+91 9319524703</a>
+                  <div class="social-icons">
+                      <a href="http://github.com/codemonk643" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                      <a href="http://instagram.com/bitwisedhruv" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="http://linkedin.com/in/bitwisedhruv" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                  <button><a href="assets/Dhruv Resume.pdf" target="_blank" download="">Download CV</a></button>
+              </div>
+              <div class="right_box"
+              data-aos="fade-down"
+          data-aos-duration="1000"
+          data-aos-delay="250"
+          data-aos-easing="ease-in-out">
+                <form name="submit-to-google-sheet" action="submit.html">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" cols="60" placeholder="Your message"></textarea>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
